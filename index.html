@@ -58,7 +58,8 @@ function load(){try{return JSON.parse(localStorage.getItem("cafinalhub")||"{}")}
 function save(){localStorage.setItem("cafinalhub",JSON.stringify(data));}
 function init(){subjects.forEach(s=>{if(!data[s])data[s]=blank();starters[s].forEach((c,i)=>{let id="c"+i;if(!data[s].chapters[id])data[s].chapters[id]={name:c,lecture:false,r1:false,r2:false,exam:false};});});if(!data.logs)data.logs=[];if(!data.mocks)data.mocks=[{}, {}, {}];if(!data.weak)data.weak=[];save()}
 init();
-function localDateString(d=new Date()){return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0")}\nconst pct=(n,d)=>d?Math.round(n/d*100):0, esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+function localDateString(d=new Date()){return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0")}
+const pct=(n,d)=>d?Math.round(n/d*100):0, esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 function totals(){let all=subjects.flatMap(s=>Object.values(data[s].chapters));return {all,done:all.filter(c=>c.exam).length,marks:all.reduce((n,c)=>n+(c.lecture?1:0)+(c.r1?1:0)+(c.r2?1:0)+(c.exam?1:0),0)}}
 function subjectPct(s){let cs=Object.values(data[s].chapters);return pct(cs.reduce((n,c)=>n+(c.lecture?1:0)+(c.r1?1:0)+(c.r2?1:0)+(c.exam?1:0),0),cs.length*4)}
 function progressbar(p){return `<div class="progress"><span style="width:${p}%"></span></div><span class="muted">${p}%</span>`}
