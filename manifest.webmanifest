@@ -1,0 +1,22 @@
+{
+  "name": "CA Final Study Hub",
+  "short_name": "CA Study Hub",
+  "description": "Offline-first CA Final study tracker for May 2027",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f3f6fb",
+  "theme_color": "#12243a",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
