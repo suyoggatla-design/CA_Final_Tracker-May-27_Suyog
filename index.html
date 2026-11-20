@@ -1,8 +1,43 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#12243a"><title>CA Final Study Hub</title>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#09090d"><title>CA Final Study Hub</title>
 <style>
 :root{--bg:#f3f6fb;--card:#fff;--ink:#15243a;--muted:#627087;--accent:#315cba;--line:#e0e7f0;--green:#167d55;--orange:#bd6a19}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px system-ui,-apple-system,Segoe UI,Roboto,sans-serif}header{background:linear-gradient(120deg,#14243a,#315cba);color:white;padding:22px 18px}header h1{margin:0;font-size:24px}header p{margin:6px 0 0;opacity:.85}.wrap{max-width:1100px;margin:auto;padding:14px}.nav{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 16px}.nav button,.btn{border:0;border-radius:10px;padding:10px 13px;background:#e4eaf5;color:#183052;font-weight:650;cursor:pointer}.nav button.active,.btn.primary{background:var(--accent);color:white}.btn.danger{background:#fee8e8;color:#9a2929}.btn.small{padding:7px 9px;font-size:13px}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px}.card{background:var(--card);border:1px solid var(--line);border-radius:15px;padding:15px;box-shadow:0 2px 9px #2035500a}.metric{font-size:28px;font-weight:750}.muted{color:var(--muted);font-size:13px}.progress{height:9px;background:#e8edf5;border-radius:9px;overflow:hidden;margin:8px 0}.progress span{display:block;height:100%;background:var(--accent);border-radius:9px}.subject-list{display:grid;gap:10px}.subject-row{display:grid;grid-template-columns:1fr minmax(100px,180px) auto;gap:12px;align-items:center}.subject-row strong{display:block}.section{margin-top:16px}.section h2{font-size:19px;margin:5px 0 12px}.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.select,input,textarea{border:1px solid var(--line);border-radius:9px;padding:9px;background:white;color:var(--ink);font:inherit;width:100%}textarea{min-height:72px}.chapter{border:1px solid var(--line);padding:12px;border-radius:12px;margin:9px 0;background:white}.chapter-top{display:flex;justify-content:space-between;gap:10px;align-items:center}.chapter-title{font-weight:700}.checks{display:flex;gap:12px;flex-wrap:wrap;margin-top:10px}.checks label{display:flex;align-items:center;gap:5px;font-size:13px}.checks input{width:auto}.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px}.tablewrap{overflow:auto}table{border-collapse:collapse;width:100%;min-width:700px}td,th{padding:9px;border-bottom:1px solid var(--line);text-align:left}th{background:#f0f4fa}.formgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px}.notice{padding:12px;border-radius:12px;background:#fff4df;border:1px solid #f1dfba;color:#704b10;margin:12px 0;font-size:13px}.hidden{display:none}.empty{padding:22px;text-align:center;color:var(--muted)}footer{padding:20px;text-align:center;color:var(--muted);font-size:12px}@media(max-width:600px){header h1{font-size:21px}.subject-row{grid-template-columns:1fr}.checks{gap:8px}.wrap{padding:10px}}
+
+/* Cinematic dark-red theme inspired by the supplied poster */
+:root{color-scheme:dark;--bg:#08090d;--card:rgba(13,15,21,.88);--ink:#f1f1f3;--muted:#a3a6b0;--accent:#c51f3a;--line:rgba(255,255,255,.12);--green:#48bd8a;--orange:#f0a34b}
+html{background:#08090d}
+body{background:radial-gradient(ellipse at 50% 0%,rgba(133,12,31,.34),transparent 48%),linear-gradient(180deg,rgba(5,6,9,.58),rgba(5,6,9,.94)),#08090d;background-attachment:fixed;color:var(--ink)}
+body:before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 50% 16%,rgba(185,18,46,.18),transparent 38%),radial-gradient(ellipse at 8% 48%,rgba(125,15,31,.12),transparent 34%),radial-gradient(ellipse at 92% 70%,rgba(125,15,31,.10),transparent 34%),repeating-linear-gradient(135deg,rgba(255,255,255,.012) 0 1px,transparent 1px 5px)}
+header{background:linear-gradient(105deg,rgba(5,6,9,.97),rgba(62,8,19,.94) 55%,rgba(10,10,14,.97));border-bottom:1px solid rgba(225,36,62,.48);box-shadow:0 12px 38px rgba(0,0,0,.42);position:relative;overflow:hidden}
+header:after{content:"";position:absolute;width:340px;height:180px;right:-90px;top:-110px;background:radial-gradient(ellipse,rgba(220,24,55,.32),transparent 68%);pointer-events:none}
+header h1{letter-spacing:.2px;text-shadow:0 2px 18px rgba(230,20,54,.28)}
+header p{color:#d2cbd0}
+.wrap{position:relative}
+.nav button,.btn{background:#20212a;color:#ececf0;border:1px solid rgba(255,255,255,.09);box-shadow:0 3px 12px rgba(0,0,0,.18)}
+.nav button.active,.btn.primary{background:linear-gradient(135deg,#a91530,#df2947);color:white;border-color:#ef5269;box-shadow:0 5px 18px rgba(185,20,48,.28)}
+.btn.danger{background:#45151e;color:#ffb8c2;border-color:#792434}
+.card,.chapter{background:var(--card);border:1px solid var(--line);box-shadow:0 9px 28px rgba(0,0,0,.28);backdrop-filter:blur(8px)}
+.card h2,.chapter-title{color:#f5f3f4}
+.metric{color:#fff}
+.muted{color:var(--muted)}
+.progress{background:#292a32}
+.progress span{background:linear-gradient(90deg,#a91430,#ed405a)}
+.select,input,textarea{background:#171920;color:#f2f2f4;border-color:#3b3d47}
+.select:focus,input:focus,textarea:focus{outline:2px solid rgba(220,43,70,.42);border-color:#d52b48}
+input::placeholder,textarea::placeholder{color:#858894}
+.chapter{background:rgba(15,17,23,.91)}
+.checks label{color:#d9d9de}
+.checks input{accent-color:#d52b48}
+table{color:#e8e8eb}
+td,th{border-bottom-color:rgba(255,255,255,.1)}
+th{background:#22232c;color:#fff}
+.notice{background:rgba(82,48,14,.34);border-color:rgba(218,153,55,.35);color:#f4d49b}
+a{color:#ff8295}
+.empty{color:#a3a6b0}
+footer{color:#858894}
+@media(max-width:600px){header{padding-top:20px;padding-bottom:20px}}
+
 </style><link rel="manifest" href="manifest.webmanifest"><link rel="icon" type="image/svg+xml" href="icon-glowing-book.svg"><link rel="apple-touch-icon" href="icon-glowing-book.svg"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"></head><body>
 <header><h1>📚 CA Final Study Hub</h1><p>May 2027 · Target: 3 revisions + 3 mocks by 15 April 2027</p></header>
 <div class="wrap"><div class="nav" id="nav"></div><main id="app"></main><footer>Offline-first · Data stored in this browser on this device. Export backups regularly.</footer></div>
