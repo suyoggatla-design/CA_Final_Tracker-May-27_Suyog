@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+<defs>
+ <linearGradient id="bg" x2="0" y2="1"><stop stop-color="#15345f"/><stop offset=".58" stop-color="#0b1d39"/><stop offset="1" stop-color="#071326"/></linearGradient>
+ <linearGradient id="moon" x2="1" y2="1"><stop stop-color="#fff6df"/><stop offset="1" stop-color="#e9bd72"/></linearGradient>
+ <linearGradient id="gold" x2="0" y2="1"><stop stop-color="#ffe8a7"/><stop offset="1" stop-color="#d99a39"/></linearGradient>
+ <clipPath id="clip"><rect width="512" height="512" rx="92"/></clipPath>
+ <filter id="glow"><feGaussianBlur stdDeviation="10"/></filter>
+</defs>
+<g clip-path="url(#clip)">
+ <rect width="512" height="512" fill="url(#bg)"/>
+ <circle cx="257" cy="190" r="126" fill="#ffe9bb" opacity=".18" filter="url(#glow)"/>
+ <circle cx="257" cy="184" r="112" fill="url(#moon)"/>
+ <path d="M0 326 100 246 166 302 249 218 346 306 415 250 512 325V512H0Z" fill="#203e65"/>
+ <path d="m0 365 112-75 75 56 91-90 99 83 62-45 73 55v163H0Z" fill="#102b4c"/>
+ <path d="m0 407 105-60 82 48 95-66 93 62 70-44 67 42v123H0Z" fill="#081a31"/>
+ <path d="M0 437q110-37 215-7t297-8v90H0Z" fill="#061426"/>
+ <!-- reader silhouette -->
+ <path d="M204 352c-6-29 4-54 23-69 12-10 29-11 40-1 12 11 11 29 2 43l-10 17 35 29-10 14-50-25-20 28-23-8 17-38Z" fill="#071426"/>
+ <path d="M228 365q-28 12-37 43l-10 35h18l18-28 24-23 29 13 15 37h19l-12-54-42-30Z" fill="#071426"/>
+ <path d="M256 337q-17-4-29 4l-22 18 8 10 24-12 24 8 13-12Z" fill="#071426"/>
+ <path d="M202 378q26-13 54 2l29 19-7 10-33-12-33 5Z" fill="#071426"/>
+ <path d="M207 378q25-13 48-1l22 13-3 15-28-12-33 8Z" fill="url(#gold)"/>
+ <path d="M211 379q21-9 42 0l20 11" fill="none" stroke="#fff2d2" stroke-width="3" stroke-linecap="round"/>
+ <path d="M192 437h127" stroke="#e8b75f" stroke-width="3" opacity=".9"/>
+ <text x="256" y="473" text-anchor="middle" font-family="Arial,sans-serif" font-size="28" font-weight="800" letter-spacing="2" fill="#fff">CA FINAL</text>
+ <text x="256" y="500" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="700" letter-spacing="4" fill="#f4c66e">STUDY HUB</text>
+</g></svg>
