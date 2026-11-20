@@ -9,7 +9,7 @@
   "theme_color": "#12243a",
   "icons": [
     {
-      "src": "icon-student.svg?v=5",
+      "src": "icon-glowing-book.svg?v=6",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any"
