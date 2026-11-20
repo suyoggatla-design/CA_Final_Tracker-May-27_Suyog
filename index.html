@@ -7,7 +7,7 @@
 /* Cinematic dark-red theme inspired by the supplied poster */
 :root{color-scheme:dark;--bg:#08090d;--card:rgba(13,15,21,.88);--ink:#f1f1f3;--muted:#a3a6b0;--accent:#c51f3a;--line:rgba(255,255,255,.12);--green:#48bd8a;--orange:#f0a34b}
 html{background:#08090d}
-body{background:radial-gradient(ellipse at 50% 0%,rgba(133,12,31,.34),transparent 48%),linear-gradient(180deg,rgba(5,6,9,.58),rgba(5,6,9,.94)),#08090d;background-attachment:fixed;color:var(--ink)}
+body{background:radial-gradient(ellipse at 50% 0%,rgba(133,12,31,.34),transparent 48%),linear-gradient(180deg,rgba(5,6,9,.58),rgba(5,6,9,.94)),#08090d;background-attachment:scroll;color:var(--ink)}
 body:before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 50% 16%,rgba(185,18,46,.18),transparent 38%),radial-gradient(ellipse at 8% 48%,rgba(125,15,31,.12),transparent 34%),radial-gradient(ellipse at 92% 70%,rgba(125,15,31,.10),transparent 34%),repeating-linear-gradient(135deg,rgba(255,255,255,.012) 0 1px,transparent 1px 5px)}
 header{background:linear-gradient(105deg,rgba(5,6,9,.97),rgba(62,8,19,.94) 55%,rgba(10,10,14,.97));border-bottom:1px solid rgba(225,36,62,.48);box-shadow:0 12px 38px rgba(0,0,0,.42);position:relative;overflow:hidden}
 header:after{content:"";position:absolute;width:340px;height:180px;right:-90px;top:-110px;background:radial-gradient(ellipse,rgba(220,24,55,.32),transparent 68%);pointer-events:none}
@@ -15,9 +15,9 @@ header h1{letter-spacing:.2px;text-shadow:0 2px 18px rgba(230,20,54,.28)}
 header p{color:#d2cbd0}
 .wrap{position:relative}
 .nav button,.btn{background:#20212a;color:#ececf0;border:1px solid rgba(255,255,255,.09);box-shadow:0 3px 12px rgba(0,0,0,.18)}
-.nav button.active,.btn.primary{background:linear-gradient(135deg,#a91530,#df2947);color:white;border-color:#ef5269;box-shadow:0 5px 18px rgba(185,20,48,.28)}
+.nav button.active,.btn.primary{background:linear-gradient(135deg,#a91530,#df2947);color:white;border-color:#ef5269;box-shadow:0 2px 8px rgba(185,20,48,.22)}
 .btn.danger{background:#45151e;color:#ffb8c2;border-color:#792434}
-.card,.chapter{background:var(--card);border:1px solid var(--line);box-shadow:0 9px 28px rgba(0,0,0,.28);backdrop-filter:blur(8px)}
+.card,.chapter{background:var(--card);border:1px solid var(--line);box-shadow:0 4px 12px rgba(0,0,0,.22);backdrop-filter:none}
 .card h2,.chapter-title{color:#f5f3f4}
 .metric{color:#fff}
 .muted{color:var(--muted)}
