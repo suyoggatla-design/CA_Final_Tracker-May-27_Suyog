@@ -108,7 +108,7 @@ function weak(){
  let list=data.weak.map((w,i)=>({w:w,i:i})).filter(x=>(s===allSubjects||x.w.subject===s)&&(ch==="__ALL__"||(x.w.chapter||"Unsorted")===ch));
  if(s===allSubjects&&ch==="__ALL__")list.sort((a,b)=>(a.w.topic||"").localeCompare(b.w.topic||"",undefined,{sensitivity:"base"}));
  const manageDisabled=s===allSubjects?" disabled":"";
- let html='<div class="card"><div class="toolbar"><h2>Weak Topics · Doubt Bank</h2><button class="btn small"'+manageDisabled+' onclick="renameWeakSubject()">Rename subject</button></div><p class="muted">Organise your existing doubts and attachments into editable subject and chapter folders.</p><div class="formgrid"><label>Subject folder<select id="weakSubjectSelect" onchange="window.weakSubjectFilter=this.value;window.weakChapterFilter=\'__ALL__\';render()"><option value="'+allSubjects+'" '+(s===allSubjects?'selected':'')+'>All subjects</option>';
+ let html='<div class="card"><h2>Weak Topics · Doubt Bank</h2><p class="muted">Organise your existing doubts and attachments into editable subject and chapter folders.</p><div class="formgrid"><label>Subject folder<select id="weakSubjectSelect" onchange="window.weakSubjectFilter=this.value;window.weakChapterFilter=\'__ALL__\';render()"><option value="'+allSubjects+'" '+(s===allSubjects?'selected':'')+'>All subjects</option>';
  subjects.forEach(x=>{html+='<option value="'+x+'" '+(s===x?'selected':'')+'>'+esc(weakSubjectLabel(x))+'</option>'});
  html+='</select></label><label>Chapter folder<select id="weakChapterSelect" onchange="window.weakChapterFilter=this.value;render()"><option value="__ALL__" '+(ch==="__ALL__"?'selected':'')+'>All chapters</option>';
  folders.forEach(x=>{html+='<option value="'+esc(x)+'" '+(ch===x?'selected':'')+'>'+esc(x)+'</option>'});
